@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scents of London — Home Diffusers</title>
+  <style>
+    :root{
+      --mint: #bfeee0;
+      --lavender: #d9c7ff;
+      --sky: #cfe9ff;
+      --muted: #6b7280;
+      --dark: #0f172a;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    body{margin:0;background:linear-gradient(180deg,var(--sky),#fff);color:var(--dark);line-height:1.5}
+    header{background:rgba(255,255,255,0.7);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
+    nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:20px}
+    nav a{margin:0 10px;text-decoration:none;color:var(--dark);font-weight:600}
+    .cta{background:linear-gradient(90deg,var(--mint),var(--lavender));padding:10px 16px;border:none;border-radius:8px;cursor:pointer;font-weight:700}
+    main{max-width:1100px;margin:auto;padding:40px 20px}
+    h1,h2{color:var(--dark)}
+    section{padding:40px 0}
+    .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px}
+    .hero img{width:100%;border-radius:16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .product{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.08);}
+    .product img{width:100%;border-radius:10px;height:200px;object-fit:cover}
+    .product h3{margin:10px 0 4px}
+    .price{font-weight:700;color:var(--dark)}
+    footer{text-align:center;padding:20px 0;border-top:1px solid rgba(0,0,0,0.05);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="font-weight:800;font-size:20px">Scents of London</div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <h1>Luxury Home Diffusers</h1>
+        <p>Bring a calm, elegant fragrance to your home with our handcrafted diffusers inspired by mint, lavender, and sky breeze.</p>
+        <button class="cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+      </div>
+      <div>
+        <img src="https://images.openai.com/thumbnails/url/NU4IcHicu5meUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4qD06KCo7P8fZOd3bKsUzM9zVyzg5yCgh3TfRw9vLPNMqrdCp1d3UNMPJ0VCu2NTQAAAZ-JFc" alt="Home diffuser">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Scents of London creates handcrafted diffusers that blend natural essential oils to create a luxurious atmosphere. Our products are eco-friendly and made with care in Gauteng, South Africa.</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="grid">
+        <div class="product">
+          <img src="https://images.openai.com/thumbnails/url/SBkQ63icu5meUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4py_QPTzfMKqs0NPDwNjfL8jLNcDMNM3c2NYg3riwyNjQMy04OzC4sNDQtVyu2NTQAAPOdI_8" alt="Reed diffuser">
+          <h3>Classic Reed Diffuser</h3>
+          <p>Soft lavender blend that brings a soothing atmosphere.</p>
+          <div class="price">R299</div>
+        </div>
+        <div class="product">
+          <img src="https://images.openai.com/thumbnails/url/3gkVbXicu5meUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw40LtcNKgjON_Y3CwspMStxK8goKo3wS3EvcDfSzfEodilMjcyON8j0zy8JVCu2NTQAAAwuJTo" alt="Splendid Sunset Diffuser">
+          <h3>Splendid Sunset</h3>
+          <p>Warm and balanced fragrance for your living space.</p>
+          <div class="price">R349</div>
+        </div>
+        <div class="product">
+          <img src="https://images.openai.com/thumbnails/url/UDyIlXicu5meUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4s8nZyCirNLHYzNEhLTfKLTAnOc4nSLS42iTL188nLyS2zNI4KccvJNS4OVCu2NTQAAAtiJPI" alt="Bois de Balincourt Diffuser">
+          <h3>Bois de Balincourt</h3>
+          <p>Earthy woody scent that adds depth and character to your home.</p>
+          <div class="price">R389</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:0697056479">069 705 6479</a><br>Email: <a href="mailto:preciousmathda@gmail.com">preciousmathda@gmail.com</a><br>Location: Gauteng, South Africa</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Scents of London • All rights reserved
+  </footer>
+</body>
+</html>
